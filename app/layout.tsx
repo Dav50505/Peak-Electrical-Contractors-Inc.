@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
+import { RecaptchaProvider } from "@/components/RecaptchaProvider";
+import { CookieConsent } from "@/components/CookieConsent";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { MobileStickyBar } from "@/components/sections/MobileStickyBar";
+import { localBusinessSchema } from "@/lib/schema";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -22,6 +28,14 @@ export const metadata: Metadata = {
   title: "Peak Electrical Contractors | Sacramento Electricians",
   description:
     "Licensed, bonded Sacramento electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Free estimates.",
+  openGraph: {
+    type: "website",
+    siteName: "Peak Electrical Contractors",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@peakelectricalsac",
+  },
 };
 
 export default function RootLayout({
@@ -31,11 +45,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema()),
+          }}
+        />
+      </head>
       <body
         className={`${montserrat.variable} ${inter.variable} font-body antialiased`}
       >
-        {children}
-        <Analytics />
+        <RecaptchaProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <MobileStickyBar />
+          <CookieConsent />
+          <Analytics />
+        </RecaptchaProvider>
       </body>
     </html>
   );
