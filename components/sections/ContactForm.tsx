@@ -13,6 +13,7 @@ export function ContactForm() {
     lastName: "",
     email: "",
     phone: "",
+    preferredDate: "",
     services: [] as string[],
     message: "",
     newsletterSignup: false,
@@ -196,6 +197,23 @@ export function ContactForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="(916) 555-0123"
+                className={inputClasses}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="preferredDate" className={labelClasses}>
+                Preferred date for estimate (optional)
+              </label>
+              <input
+                id="preferredDate"
+                name="preferredDate"
+                type="date"
+                value={formData.preferredDate}
+                onChange={handleChange}
+                onFocus={(e) => {
+                  e.target.showPicker?.();
+                }}
                 className={inputClasses}
               />
             </div>

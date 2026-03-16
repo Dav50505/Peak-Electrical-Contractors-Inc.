@@ -4,6 +4,8 @@ import { TrustBar } from "@/components/sections/TrustBar";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Section } from "@/components/ui/Section";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { FadeIn } from "@/components/ui/FadeIn";
+import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -282,6 +284,8 @@ export default function AboutPage() {
         headline="Sacramento's Trusted Family Electricians"
         trustLine="Licensed #1075671 · Bonded & Insured · SMUD-Approved Contractor"
         subtext="For over a decade, Peak Electrical Contractors has been Sacramento's go-to team for safe, permitted, and fairly priced electrical work — from panel upgrades to EV chargers and everything in between."
+        backgroundImage="/images/About.webp"
+        backgroundImageAlt="Peak Electrical Contractors team or Sacramento electrical work"
       />
 
       {/* 2. Trust bar */}
@@ -289,7 +293,7 @@ export default function AboutPage() {
 
       {/* 3. Company Story */}
       <Section background="white">
-        <div className="mx-auto max-w-3xl text-center">
+        <FadeIn className="mx-auto max-w-3xl text-center">
           <SectionLabel>Our Story</SectionLabel>
           <h2 className="font-heading text-2xl font-bold text-brand-blue md:text-3xl">
             Family-Owned and Sacramento-Rooted Since 2013
@@ -319,7 +323,7 @@ export default function AboutPage() {
                 className="rounded-sm border border-brand-light-gray bg-brand-light-gray px-4 py-5"
               >
                 <p className="font-heading text-2xl font-bold text-brand-blue md:text-3xl">
-                  {stat.value}
+                  <AnimatedCounter value={stat.value} />
                 </p>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand-gray">
                   {stat.label}
@@ -327,12 +331,12 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* 4. Why Choose Us */}
       <Section background="light" id="why-choose-us">
-        <div className="text-center">
+        <FadeIn className="text-center">
           <SectionLabel>Why Choose Us</SectionLabel>
           <h2 className="font-heading text-2xl font-bold text-brand-blue md:text-3xl">
             What Sets Peak Electrical Apart
@@ -340,7 +344,7 @@ export default function AboutPage() {
           <p className="mx-auto mt-3 max-w-2xl text-base text-brand-gray">
             There are a lot of electricians in Sacramento. Here&apos;s why our customers keep coming back — and keep sending their friends.
           </p>
-        </div>
+        </FadeIn>
 
         <ul className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {differentiators.map((item) => (
@@ -366,7 +370,7 @@ export default function AboutPage() {
 
       {/* 5. Our Values */}
       <Section background="white" id="our-values">
-        <div className="text-center">
+        <FadeIn className="text-center">
           <SectionLabel>What We Stand For</SectionLabel>
           <h2 className="font-heading text-2xl font-bold text-brand-blue md:text-3xl">
             Our Values
@@ -374,7 +378,7 @@ export default function AboutPage() {
           <p className="mx-auto mt-3 max-w-2xl text-base text-brand-gray">
             These aren&apos;t marketing words. They&apos;re the standards our team holds itself to on every single job.
           </p>
-        </div>
+        </FadeIn>
 
         <ul className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((value) => (
@@ -395,7 +399,7 @@ export default function AboutPage() {
 
       {/* 6. License & Credentials */}
       <Section background="dark" id="credentials">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+        <FadeIn className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
           {/* Left: copy */}
           <div>
             <SectionLabel theme="light">Our Credentials</SectionLabel>
@@ -460,7 +464,7 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* 7. CTA Banner */}

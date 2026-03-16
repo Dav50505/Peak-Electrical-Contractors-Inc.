@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     description:
       "Get a free estimate from Sacramento's trusted electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Call (916) 572-9541.",
     url: "https://peakelectricalsac.com/contact",
-    images: [{ url: "/images/homepage.png", width: 1200, height: 630 }],
+    images: [{ url: "/images/Contact.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Peak Electrical Contractors | Free Estimate Sacramento",
     description:
       "Get a free estimate from Sacramento's trusted electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Call (916) 572-9541.",
-    images: ["/images/homepage.png"],
+    images: ["/images/Contact.png"],
   },
 };
 
@@ -60,8 +60,8 @@ export default function ContactPage() {
         headline="Get a Free Estimate"
         subtext="Licensed, bonded Sacramento electricians. We respond within one business day."
         trustLine="Licensed #1075671 · Bonded & Insured · SMUD-Approved"
-        backgroundImage="/images/homepage.png"
-        backgroundImageAlt="Peak Electrical Contractors serving Sacramento"
+        backgroundImage="/images/Contact.png"
+        backgroundImageAlt="Modern Sacramento home with professional exterior and landscape lighting"
       />
 
       {/* 2. Trust bar */}

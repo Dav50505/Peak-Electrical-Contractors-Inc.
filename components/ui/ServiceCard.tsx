@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
+import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 
 interface ServiceCardProps {
   number: number;
@@ -29,7 +30,7 @@ export function ServiceCard({
             {icon}
           </span>
           <span className="font-heading text-5xl font-bold text-gray-100 leading-none select-none">
-            {String(number).padStart(2, "0")}
+            <AnimatedCounter value={String(number)} padTo={2} />
           </span>
         </div>
 

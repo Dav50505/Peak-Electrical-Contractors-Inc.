@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { FadeIn } from "@/components/ui/FadeIn";
 
 interface PageHeroProps {
   eyebrow?: string;
@@ -46,7 +47,7 @@ export function PageHero({
       )}
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <FadeIn className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         {eyebrow && (
           <SectionLabel theme="light" className="mb-2">
             {eyebrow}
@@ -74,7 +75,7 @@ export function PageHero({
             {subtext}
           </p>
         )}
-      </div>
+      </FadeIn>
 
       {/* Bottom accent bar */}
       <div

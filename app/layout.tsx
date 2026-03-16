@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { RecaptchaProvider } from "@/components/RecaptchaProvider";
-import { CookieConsent } from "@/components/CookieConsent";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileStickyBar } from "@/components/sections/MobileStickyBar";
@@ -61,7 +60,6 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <MobileStickyBar />
-          <CookieConsent />
           <Analytics />
         </RecaptchaProvider>
       </body>

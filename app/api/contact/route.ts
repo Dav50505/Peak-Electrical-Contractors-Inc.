@@ -27,6 +27,7 @@ function buildEmailHtml(body: {
   lastName: string;
   email: string;
   phone?: string;
+  preferredDate?: string;
   services: string[];
   message?: string;
   newsletterSignup: boolean;
@@ -40,6 +41,7 @@ function buildEmailHtml(body: {
     <p><strong>Name:</strong> ${body.firstName} ${body.lastName}</p>
     <p><strong>Email:</strong> <a href="mailto:${body.email}">${body.email}</a></p>
     <p><strong>Phone:</strong> ${body.phone || "Not provided"}</p>
+    <p><strong>Preferred date:</strong> ${body.preferredDate || "Not specified"}</p>
     <p><strong>Services Interested In:</strong> ${servicesList}</p>
     ${body.message ? `<p><strong>Message:</strong></p><p>${body.message.replace(/\n/g, "<br>")}</p>` : ""}
     <p><strong>Newsletter signup:</strong> ${body.newsletterSignup ? "Yes" : "No"}</p>
@@ -65,6 +67,7 @@ export async function POST(request: NextRequest) {
       lastName,
       email,
       phone,
+      preferredDate,
       services = [],
       message,
       newsletterSignup = false,
@@ -118,6 +121,7 @@ export async function POST(request: NextRequest) {
         lastName: String(lastName ?? ""),
         email,
         phone: phone ? String(phone) : undefined,
+        preferredDate: preferredDate ? String(preferredDate) : undefined,
         services: safeServices,
         message: message ? String(message) : undefined,
         newsletterSignup: Boolean(newsletterSignup),

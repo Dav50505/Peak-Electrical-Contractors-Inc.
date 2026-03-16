@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Section } from "@/components/ui/Section";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Button } from "@/components/ui/Button";
+import { FadeIn } from "@/components/ui/FadeIn";
+import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { TestimonialCard } from "@/components/ui/TestimonialCard";
 import { BlogCard } from "@/components/ui/BlogCard";
@@ -108,7 +110,7 @@ export default function HomePage() {
         />
 
         {/* Content */}
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <FadeIn className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <SectionLabel theme="light">{HERO.eyebrow}</SectionLabel>
 
           <h1 className="font-heading mt-3 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
@@ -159,7 +161,7 @@ export default function HomePage() {
               (916) 572-9541 — Free Estimates Available
             </a>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Bottom gold accent bar */}
         <div
@@ -233,7 +235,7 @@ export default function HomePage() {
           </div>
 
           {/* Copy side */}
-          <div>
+          <FadeIn>
             <SectionLabel>Who We Are</SectionLabel>
             <h2 className="font-heading mt-2 text-3xl font-bold leading-tight text-brand-blue md:text-4xl">
               Sacramento&rsquo;s Family-Owned
@@ -260,7 +262,7 @@ export default function HomePage() {
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="font-heading text-2xl font-bold text-brand-blue">
-                    {stat.value}
+                    <AnimatedCounter value={stat.value} />
                   </p>
                   <p className="mt-0.5 text-xs text-brand-gray leading-tight">
                     {stat.label}
@@ -274,7 +276,7 @@ export default function HomePage() {
                 Learn About Us
               </Button>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Section>
 
@@ -282,7 +284,7 @@ export default function HomePage() {
           4. SERVICES OVERVIEW GRID
       ───────────────────────────────────────── */}
       <Section background="light" id="services">
-        <div className="text-center">
+        <FadeIn className="text-center">
           <SectionLabel>What We Do</SectionLabel>
           <h2 className="font-heading mt-2 text-3xl font-bold leading-tight text-brand-blue md:text-4xl">
             Electrical Services for{" "}
@@ -292,7 +294,7 @@ export default function HomePage() {
             From panel replacements to EV chargers and SMUD rebates — we handle it all, fully
             licensed and permitted.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
@@ -308,11 +310,11 @@ export default function HomePage() {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <FadeIn className="mt-10 text-center">
           <Button href="/services" variant="dark" size="lg">
             See All Services
           </Button>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* ─────────────────────────────────────────
@@ -332,7 +334,7 @@ export default function HomePage() {
           6. WHY CHOOSE PEAK
       ───────────────────────────────────────── */}
       <Section background="dark" id="why-peak">
-        <div className="text-center">
+        <FadeIn className="text-center">
           <SectionLabel theme="light">Why Choose Peak</SectionLabel>
           <h2 className="font-heading mt-2 text-3xl font-bold leading-tight text-white md:text-4xl">
             The Peak Difference
@@ -341,7 +343,7 @@ export default function HomePage() {
             We&rsquo;re not the cheapest electrician in Sacramento. We&rsquo;re the most thorough.
             Here&rsquo;s what that looks like in practice.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {DIFFERENTIATORS.map((item) => (
@@ -367,7 +369,7 @@ export default function HomePage() {
           7. TESTIMONIALS
       ───────────────────────────────────────── */}
       <Section background="light" id="testimonials">
-        <div className="text-center">
+        <FadeIn className="text-center">
           <SectionLabel>What Customers Say</SectionLabel>
           <h2 className="font-heading mt-2 text-3xl font-bold leading-tight text-brand-blue md:text-4xl">
             Real Reviews from Real Customers
@@ -376,7 +378,7 @@ export default function HomePage() {
             Don&rsquo;t take our word for it — here&rsquo;s what Sacramento homeowners say about
             working with Peak.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {TESTIMONIALS.map((t, i) => (
@@ -391,7 +393,7 @@ export default function HomePage() {
           ))}
         </div>
 
-        <div className="mt-8 text-center">
+        <FadeIn className="mt-8 text-center">
           <a
             href="https://www.yelp.com/biz/peak-electrical-contractors"
             target="_blank"
@@ -414,14 +416,14 @@ export default function HomePage() {
               />
             </svg>
           </a>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* ─────────────────────────────────────────
           8. SERVICE AREAS
       ───────────────────────────────────────── */}
       <Section background="white" id="service-areas">
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
+        <FadeIn className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div>
             <SectionLabel>Where We Work</SectionLabel>
             <h2 className="font-heading mt-2 text-3xl font-bold leading-tight text-brand-blue md:text-4xl">
@@ -462,14 +464,14 @@ export default function HomePage() {
               ))}
             </ul>
           </div>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* ─────────────────────────────────────────
           9. BLOG PREVIEW
       ───────────────────────────────────────── */}
       <Section background="light" id="blog">
-        <div className="text-center">
+        <FadeIn className="text-center">
           <SectionLabel>Electrical Tips & News</SectionLabel>
           <h2 className="font-heading mt-2 text-3xl font-bold leading-tight text-brand-blue md:text-4xl">
             From the Peak Blog
@@ -477,7 +479,7 @@ export default function HomePage() {
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-brand-gray">
             Helpful guides for Sacramento homeowners on panels, EV charging, SMUD rebates, and more.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {getRecentPosts(3).map((post) => (
@@ -494,11 +496,11 @@ export default function HomePage() {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <FadeIn className="mt-10 text-center">
           <Button href="/blog" variant="secondary">
             View All Articles
           </Button>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* ─────────────────────────────────────────

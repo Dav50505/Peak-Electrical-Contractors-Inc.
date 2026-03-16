@@ -4,6 +4,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Section } from "@/components/ui/Section";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -53,7 +54,7 @@ export default function ServicesPage() {
 
       {/* Services grid */}
       <Section background="white" id="services">
-        <div className="mb-10 text-center">
+        <FadeIn className="mb-10 text-center">
           <SectionLabel  className="mb-2">
             Our Services
           </SectionLabel>
@@ -65,7 +66,7 @@ export default function ServicesPage() {
             overhaul, we handle every job with the same attention to detail —
             pulled permits, scheduled inspections, and a clean job site.
           </p>
-        </div>
+        </FadeIn>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
@@ -84,7 +85,7 @@ export default function ServicesPage() {
 
       {/* "All Work Permitted and Inspected" callout */}
       <Section background="light">
-        <div className="mx-auto max-w-4xl">
+        <FadeIn className="mx-auto max-w-4xl">
           <div className="rounded-sm border-l-4 border-brand-accent bg-white p-8 shadow-sm md:p-10">
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
               {/* Icon cluster */}
@@ -130,7 +131,7 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-        </div>
+        </FadeIn>
       </Section>
 
       {/* Final CTA */}
