@@ -1,13 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { Section } from "@/components/ui/Section";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { SERVICE_OPTIONS } from "@/lib/constants";
 
 export function ContactForm() {
-  const { executeRecaptcha } = useGoogleReCaptcha();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -52,15 +50,10 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
-      let recaptchaToken: string | undefined;
-      if (executeRecaptcha) {
-        recaptchaToken = await executeRecaptcha("contact_form");
-      }
-
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, recaptchaToken }),
+        body: JSON.stringify(formData),
       });
 
       if (res.ok) {

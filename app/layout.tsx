@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
-import { RecaptchaProvider } from "@/components/RecaptchaProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileStickyBar } from "@/components/sections/MobileStickyBar";
@@ -55,13 +54,11 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${inter.variable} font-body antialiased`}
       >
-        <RecaptchaProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <MobileStickyBar />
-          <Analytics />
-        </RecaptchaProvider>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <MobileStickyBar />
+        <Analytics />
       </body>
     </html>
   );

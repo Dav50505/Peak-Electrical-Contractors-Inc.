@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     description:
       "Helpful guides for Sacramento homeowners on panels, EV charging, SMUD rebates, and more.",
     url: "https://peakelectricalsac.com/blog",
-    images: [{ url: "/images/homepage.png", width: 1200, height: 630 }],
+    images: [{ url: "/images/blog/hero.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Electrical Tips & News | Peak Electrical Contractors",
     description:
       "Helpful guides for Sacramento homeowners on panels, EV charging, SMUD rebates, and more.",
-    images: ["/images/homepage.png"],
+    images: ["/images/blog/hero.png"],
   },
 };
 
@@ -46,6 +46,8 @@ export default function BlogIndexPage() {
         headline="Electrical Tips & News"
         headlineItalic="for Sacramento Homeowners"
         subtext="Helpful guides on panel upgrades, EV chargers, SMUD rebates, rewiring, and more — from licensed Sacramento electricians."
+        backgroundImage="/images/blog/hero.png"
+        backgroundImageAlt="Licensed Peak Electrical technician discussing solar and EV charging solutions with Sacramento homeowner"
       />
 
       <Section background="light">

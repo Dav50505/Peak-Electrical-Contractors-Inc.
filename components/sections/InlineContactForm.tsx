@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { Section } from "@/components/ui/Section";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { PHONE_HREF, PHONE_NUMBER } from "@/lib/constants";
@@ -17,7 +16,6 @@ export function InlineContactForm({
   subtitle = "Tell us a bit about your project and we'll get back to you within one business day.",
   background = "white",
 }: InlineContactFormProps) {
-  const { executeRecaptcha } = useGoogleReCaptcha();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -38,15 +36,10 @@ export function InlineContactForm({
     setErrorMessage("");
 
     try {
-      let recaptchaToken: string | undefined;
-      if (executeRecaptcha) {
-        recaptchaToken = await executeRecaptcha("estimate_request");
-      }
-
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, recaptchaToken }),
+        body: JSON.stringify(formData),
       });
 
       if (res.ok) {

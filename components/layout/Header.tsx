@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
@@ -64,9 +65,13 @@ export function Header() {
           className="flex items-center gap-2 shrink-0"
           aria-label="Peak Electrical Contractors — Home"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-brand-blue">
-            <span className="font-heading text-lg font-bold text-brand-accent">P</span>
-          </div>
+          <Image
+            src="/images/newest-logo.png"
+            alt="Peak Electrical Contractors logo"
+            width={45}
+            height={45}
+            className="h-[45px] w-[45px] object-contain"
+          />
           <div className="hidden sm:block">
             <span className="font-heading text-base font-bold leading-none text-brand-blue">
               Peak Electrical

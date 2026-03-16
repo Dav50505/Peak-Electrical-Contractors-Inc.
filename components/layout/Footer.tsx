@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   PHONE_NUMBER,
   PHONE_HREF,
@@ -50,9 +51,13 @@ export function Footer() {
           <div>
             {/* Logo */}
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-brand-blue">
-                <span className="font-heading text-lg font-bold text-brand-accent">P</span>
-              </div>
+              <Image
+                src="/images/newest-logo.png"
+                alt="Peak Electrical Contractors logo"
+                width={45}
+                height={45}
+                className="h-[45px] w-[45px] object-contain"
+              />
               <div>
                 <span className="font-heading text-base font-bold text-white leading-none">
                   Peak Electrical

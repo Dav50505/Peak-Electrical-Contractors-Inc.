@@ -4,23 +4,10 @@ import { Resend } from "resend";
 const TO_EMAIL = process.env.CONTACT_EMAIL ?? "peakelectricalsac@gmail.com";
 const FROM_EMAIL =
   process.env.FROM_EMAIL ?? "Peak Electrical <onboarding@resend.dev>";
-const RECAPTCHA_SECRET = process.env.RECAPTCHA_SECRET_KEY;
-const RECAPTCHA_TEST_SECRET = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
 
 const resend = process.env.RESEND_API_KEY
   ? new Resend(process.env.RESEND_API_KEY)
   : null;
-
-async function verifyRecaptcha(token: string): Promise<boolean> {
-  const secret = RECAPTCHA_SECRET ?? RECAPTCHA_TEST_SECRET;
-  const res = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: `secret=${secret}&response=${token}`,
-  });
-  const data = await res.json();
-  return data.success === true && (data.score ?? 1) >= 0.5;
-}
 
 function buildEmailHtml(body: {
   firstName: string;
@@ -71,18 +58,7 @@ export async function POST(request: NextRequest) {
       services = [],
       message,
       newsletterSignup = false,
-      recaptchaToken,
     } = body;
-
-    if (recaptchaToken && typeof recaptchaToken === "string") {
-      const valid = await verifyRecaptcha(recaptchaToken);
-      if (!valid) {
-        return NextResponse.json(
-          { error: "Verification failed. Please try again." },
-          { status: 400 }
-        );
-      }
-    }
 
     if (!email || typeof email !== "string") {
       return NextResponse.json(
