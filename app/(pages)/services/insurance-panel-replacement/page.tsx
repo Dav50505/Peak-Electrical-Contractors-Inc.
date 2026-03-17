@@ -746,7 +746,7 @@ export default function InsurancePanelReplacementPage() {
       {/* 11. Inline contact form */}
       <InlineContactForm
         title="Find Out if Your Panel Qualifies"
-        subtitle="Fill out the form and we'll assess your panel and insurance situation within one business day. Prefer to talk? Call us at (916) 357-2490."
+        subtitle="Fill out the form and we'll assess your panel and insurance situation within one business day. Prefer to talk? Call us at (916) 584-2124."
         background="white"
       />
 
@@ -754,11 +754,11 @@ export default function InsurancePanelReplacementPage() {
       <CTABanner
         variant="dark"
         headline="Ready to Get Your Panel Replaced Through Insurance?"
-        body="Call Peak Electrical Contractors at (916) 357-2490 or request a free assessment online. We serve Sacramento and surrounding areas."
+        body="Call Peak Electrical Contractors at (916) 584-2124 or request a free assessment online. We serve Sacramento and surrounding areas."
         buttonLabel="Find Out if You Qualify"
         buttonHref="#estimate"
-        secondaryButtonLabel="Call (916) 357-2490"
-        secondaryButtonHref="tel:9163572490"
+        secondaryButtonLabel="Call (916) 584-2124"
+        secondaryButtonHref="tel:+19165842124"
       />
     </>
   );

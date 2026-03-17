@@ -474,8 +474,8 @@ export default function AboutPage() {
         body="Get a free estimate from Peak Electrical Contractors. We respond within one business day and are happy to answer any questions before you commit."
         buttonLabel="Get a Free Estimate"
         buttonHref="/contact"
-        secondaryButtonLabel="Call (916) 572-9541"
-        secondaryButtonHref="tel:+19165729541"
+        secondaryButtonLabel="Call (916) 584-2124"
+        secondaryButtonHref="tel:+19165842124"
       />
     </>
   );

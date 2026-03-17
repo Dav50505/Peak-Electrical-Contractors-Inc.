@@ -5,8 +5,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
-const PHONE_NUMBER = "(916) 572-9541";
-const PHONE_HREF = "tel:+19165729541";
+const PHONE_NUMBER = "(916) 584-2124";
+const PHONE_HREF = "tel:+19165842124";
 
 const navLinks = [
   { label: "Home", href: "/" },

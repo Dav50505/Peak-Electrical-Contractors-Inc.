@@ -16,7 +16,7 @@ export function localBusinessSchema() {
     description:
       "Family-owned Sacramento electrical contractors specializing in panel upgrades, EV charger installation, whole-house rewiring, SMUD rebates, and more. Licensed, bonded, and insured.",
     url: SITE_URL,
-    telephone: "+1-916-572-9541",
+    telephone: "+1-916-584-2124",
     email: "peakelectricalsac@gmail.com",
     foundingDate: "2013",
     address: {

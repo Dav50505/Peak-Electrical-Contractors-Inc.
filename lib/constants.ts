@@ -3,8 +3,8 @@
  * Single source of truth for contact info, social links, etc.
  */
 
-export const PHONE_NUMBER = "(916) 572-9541";
-export const PHONE_HREF = "tel:+19165729541";
+export const PHONE_NUMBER = "(916) 584-2124";
+export const PHONE_HREF = "tel:+19165842124";
 export const EMAIL = "peakelectricalsac@gmail.com";
 export const LICENSE_NUMBER = "1075671";
 

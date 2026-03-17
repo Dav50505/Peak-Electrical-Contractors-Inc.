@@ -896,7 +896,7 @@ export default function SmudRebatesPage() {
       {/* 12. Inline contact form */}
       <InlineContactForm
         title="Find Out if You Qualify for SMUD Rebates"
-        subtitle="Fill out the form and we'll confirm your eligibility within one business day. Prefer to talk? Call us at (916) 357-2490."
+        subtitle="Fill out the form and we'll confirm your eligibility within one business day. Prefer to talk? Call us at (916) 584-2124."
         background="white"
       />
 
@@ -904,11 +904,11 @@ export default function SmudRebatesPage() {
       <CTABanner
         variant="dark"
         headline="Ready to Claim Your SMUD Rebate? Let's Talk."
-        body="Call Peak Electrical Contractors at (916) 357-2490 or request a free estimate online. We'll confirm your eligibility and handle the paperwork from start to finish."
+        body="Call Peak Electrical Contractors at (916) 584-2124 or request a free estimate online. We'll confirm your eligibility and handle the paperwork from start to finish."
         buttonLabel="Get a Free Estimate"
         buttonHref="#estimate"
-        secondaryButtonLabel="Call (916) 357-2490"
-        secondaryButtonHref="tel:9163572490"
+        secondaryButtonLabel="Call (916) 584-2124"
+        secondaryButtonHref="tel:+19165842124"
       />
     </>
   );

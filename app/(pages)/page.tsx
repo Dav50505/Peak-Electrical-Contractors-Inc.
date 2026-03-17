@@ -155,10 +155,10 @@ export default function HomePage() {
               />
             </svg>
             <a
-              href="tel:+19165729541"
+              href="tel:+19165842124"
               className="text-sm font-semibold text-white hover:text-brand-accent transition-colors"
             >
-              (916) 572-9541 — Free Estimates Available
+              (916) 584-2124 — Free Estimates Available
             </a>
           </div>
         </FadeIn>
@@ -511,8 +511,8 @@ export default function HomePage() {
         body="We offer free, no-obligation estimates for all projects. Most panel upgrades are completed in 1–2 business days."
         buttonLabel="Get a Free Estimate"
         buttonHref="/contact"
-        secondaryButtonLabel="(916) 572-9541"
-        secondaryButtonHref="tel:+19165729541"
+        secondaryButtonLabel="(916) 584-2124"
+        secondaryButtonHref="tel:+19165842124"
       />
     </>
   );

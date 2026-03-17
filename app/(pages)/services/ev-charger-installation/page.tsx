@@ -630,7 +630,7 @@ export default function EvChargerInstallationPage() {
       {/* 10. Inline contact form */}
       <InlineContactForm
         title="Request Your Free EV Charger Estimate"
-        subtitle="Fill out the form and we'll follow up within one business day. Prefer to talk? Call us at (916) 357-2490."
+        subtitle="Fill out the form and we'll follow up within one business day. Prefer to talk? Call us at (916) 584-2124."
         background="white"
       />
 
@@ -638,11 +638,11 @@ export default function EvChargerInstallationPage() {
       <CTABanner
         variant="dark"
         headline="Ready to Power Up Your EV? Let's Talk."
-        body="Call Peak Electrical Contractors at (916) 357-2490 or request a free estimate online. We serve Sacramento and surrounding areas."
+        body="Call Peak Electrical Contractors at (916) 584-2124 or request a free estimate online. We serve Sacramento and surrounding areas."
         buttonLabel="Get a Free Estimate"
         buttonHref="#estimate"
-        secondaryButtonLabel="Call (916) 357-2490"
-        secondaryButtonHref="tel:9163572490"
+        secondaryButtonLabel="Call (916) 584-2124"
+        secondaryButtonHref="tel:+19165842124"
       />
     </>
   );

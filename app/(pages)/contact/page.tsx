@@ -18,14 +18,14 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Contact Peak Electrical Contractors | Free Estimate Sacramento",
   description:
-    "Get a free estimate from Sacramento's trusted electricians. Contact Peak Electrical for panel upgrades, EV chargers, rewiring, and SMUD rebates. Call (916) 572-9541.",
+    "Get a free estimate from Sacramento's trusted electricians. Contact Peak Electrical for panel upgrades, EV chargers, rewiring, and SMUD rebates. Call (916) 584-2124.",
   alternates: {
     canonical: "https://peakelectricalsac.com/contact",
   },
   openGraph: {
     title: "Contact Peak Electrical Contractors | Free Estimate Sacramento",
     description:
-      "Get a free estimate from Sacramento's trusted electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Call (916) 572-9541.",
+      "Get a free estimate from Sacramento's trusted electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Call (916) 584-2124.",
     url: "https://peakelectricalsac.com/contact",
     images: [{ url: "/images/Contact.png", width: 1200, height: 630 }],
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Peak Electrical Contractors | Free Estimate Sacramento",
     description:
-      "Get a free estimate from Sacramento's trusted electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Call (916) 572-9541.",
+      "Get a free estimate from Sacramento's trusted electricians. Panel upgrades, EV chargers, rewiring, SMUD rebates. Call (916) 584-2124.",
     images: ["/images/Contact.png"],
   },
 };

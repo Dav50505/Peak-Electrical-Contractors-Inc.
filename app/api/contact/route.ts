@@ -40,7 +40,7 @@ function buildAutoReplyHtml(firstName: string): string {
     <h2>Thanks for Reaching Out!</h2>
     <p>Hi ${firstName || "there"},</p>
     <p>We received your message and will get back to you within one business day.</p>
-    <p>For urgent electrical needs, call us directly at <a href="tel:+19165729541">(916) 572-9541</a>.</p>
+    <p>For urgent electrical needs, call us directly at <a href="tel:+19165842124">(916) 584-2124</a>.</p>
     <p>— Peak Electrical Contractors Inc.</p>
   `;
 }

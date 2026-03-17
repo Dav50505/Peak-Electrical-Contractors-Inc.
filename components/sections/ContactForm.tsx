@@ -69,7 +69,7 @@ export function ContactForm() {
       }
     } catch {
       setErrorMessage(
-        "Unable to send your message. Please call us directly at (916) 572-9541."
+        "Unable to send your message. Please call us directly at (916) 584-2124."
       );
       setStatus("error");
     }
@@ -116,10 +116,10 @@ export function ContactForm() {
             <p className="mt-2 text-brand-gray">
               We&apos;ll be in touch within one business day. For urgent needs, call us at{" "}
               <a
-                href="tel:+19165729541"
+                href="tel:+19165842124"
                 className="font-semibold text-brand-accent hover:underline"
               >
-                (916) 572-9541
+                (916) 584-2124
               </a>
               .
             </p>
