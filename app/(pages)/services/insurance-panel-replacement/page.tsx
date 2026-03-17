@@ -436,6 +436,8 @@ export default function InsurancePanelReplacementPage() {
 
       {/* 1. Hero */}
       <PageHero
+        backgroundImage="/images/Services/Insurance%20Coordination.png"
+        backgroundImageAlt="Insurance coordination for electrical work"
         eyebrow="Our Services"
         headline="Insurance Coordination for Meter Panel Replacements"
         trustLine="Licensed, Bonded, and Insured | Experts in Insurance-Approved Electrical Upgrades"

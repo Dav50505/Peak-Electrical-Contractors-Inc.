@@ -27,7 +27,7 @@ export function PageHero({
 
   return (
     <section
-      className={`relative flex min-h-[320px] items-center overflow-hidden md:min-h-[400px] ${
+      className={`relative flex min-h-[430px] items-center overflow-hidden md:min-h-[600px] ${
         hasImage ? "" : "bg-brand-blue"
       }`}
     >

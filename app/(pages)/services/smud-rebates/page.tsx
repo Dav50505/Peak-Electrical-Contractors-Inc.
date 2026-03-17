@@ -557,6 +557,8 @@ export default function SmudRebatesPage() {
 
       {/* 1. Hero */}
       <PageHero
+        backgroundImage="/images/Services/SMUD-rebates.png"
+        backgroundImageAlt="SMUD electrical rebates"
         eyebrow="Our Services"
         headline="SMUD Contractor | Electrical Rebates Up to $2,500"
         trustLine="Licensed, Bonded, and Insured | Official SMUD Contractor"

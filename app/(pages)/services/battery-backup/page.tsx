@@ -389,6 +389,8 @@ export default function BatteryBackupPage() {
 
       {/* 1. Hero */}
       <PageHero
+        backgroundImage="/images/Services/Battery%20Backup.png"
+        backgroundImageAlt="Whole-home battery backup system"
         eyebrow="Our Services"
         headline="Whole-Home Battery Backup Installation in Sacramento"
         trustLine="Licensed, Bonded &amp; Insured | Sacramento, CA"

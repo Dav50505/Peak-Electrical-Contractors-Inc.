@@ -323,6 +323,8 @@ export default function EvChargerInstallationPage() {
 
       {/* 1. Hero */}
       <PageHero
+        backgroundImage="/images/Services/EV%20Charger%20Installation.png"
+        backgroundImageAlt="EV charger installation in garage"
         eyebrow="Our Services"
         headline="EV Charger Installation for Homes and Businesses"
         trustLine="Licensed, Bonded, and Insured | Trusted SMUD Contractor"

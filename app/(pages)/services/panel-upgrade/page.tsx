@@ -403,6 +403,8 @@ export default function PanelUpgradePage() {
 
       {/* 1. Hero */}
       <PageHero
+        backgroundImage="/images/Services/panel-upgrade.jpg"
+        backgroundImageAlt="Electrician working on electrical panel"
         eyebrow="Our Services"
         headline="Meter Panel Upgrades, Replacements &amp; Subpanel Installations"
         trustLine="Licensed, Bonded &amp; Insured | Permitted, Inspected, and Done Right"

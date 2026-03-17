@@ -185,10 +185,9 @@ export default function HomePage() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           {/* Photo side */}
           <div className="relative">
-            {/* TODO: Replace with a real team or job-site photo at /public/images/about-team.webp */}
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm bg-brand-light-gray">
               <Image
-                src="/images/homepage.png"
+                src="/images/Who-we-are.jpg"
                 alt="Peak Electrical Contractors team on a Sacramento job site"
                 fill
                 className="object-cover"

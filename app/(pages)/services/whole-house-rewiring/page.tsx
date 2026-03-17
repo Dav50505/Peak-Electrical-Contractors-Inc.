@@ -460,6 +460,8 @@ export default function WholeHouseRewiringPage() {
 
       {/* 1. Hero */}
       <PageHero
+        backgroundImage="/images/Services/Whole%20House%20Rewiring.png"
+        backgroundImageAlt="Whole house rewiring service"
         eyebrow="Our Services"
         headline="Whole House Rewiring Services"
         trustLine="Peak Electrical Contractors Inc. | Sacramento, CA"
